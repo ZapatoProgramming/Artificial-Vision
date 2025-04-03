@@ -65,15 +65,6 @@ python3 07_ImageFilteringEdgeDetection.py <camera_index>
     - F for features filter
     - P for no filter
 
-### Script: 11_GOTURNTracker.py
-
-This script requires to unzip the goturn.caffemodel.zip.* with the following commands
-
-```bash
-cat goturn.caffemodel.zip* > goturn.caffemodel.zip
-unzip goturn.caffemodel.zip
-```
-
 ### Script: 12_FaceDetection.py
 
 When running the 12_FaceDetection.py script, there are a few essential considerations to ensure proper functionality:
