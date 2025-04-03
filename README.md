@@ -19,7 +19,7 @@ You can do this in Anaconda with the following commands.
     conda install -c conda-forge opencv
 ```
 
-### Script: 01_AccessingTheCamera
+### Script: 01_GettingStartedWithImages
 
 **IMPORTANT: Ensure that the other Python environment has the cv2 library installed. This is necessary for the code to run correctly, as it relies on OpenCV functionality.**
 
@@ -28,7 +28,6 @@ To install the OpenCV library, use the following command in your Python environm
 ``` bash
 pip3 install numpy opencv-python
 ```
-
 
 ### Script: 05_AccessingTheCamera
 
@@ -65,3 +64,27 @@ python3 07_ImageFilteringEdgeDetection.py <camera_index>
     - L for Bilateral Blur filter
     - F for features filter
     - P for no filter
+
+### Script: 11_GOTURNTracker.py
+
+This script requires to unzip the goturn.caffemodel.zip.* with the following commands
+
+```bash
+cat goturn.caffemodel.zip* > goturn.caffemodel.zip
+unzip goturn.caffemodel.zip
+```
+
+### Script: 12_FaceDetection.py
+
+When running the 12_FaceDetection.py script, there are a few essential considerations to ensure proper functionality:
+
+1. Virtual Camera Software (e.g., OBS):
+- If a software like OBS that uses a virtual camera is installed, it may override the default camera settings on your system.
+As a result, the native camera (e.g., FaceTime HD Camera or built-in webcam) might not be accessible at its default index (0).
+
+2. Specifying the Correct Camera Index:
+- To use the correct camera, you need to pass the appropriate camera index as a command-line argument when running the script.
+
+```bash
+python3 12_FaceDetection.py <camera_index>
+```
